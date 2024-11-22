@@ -1,0 +1,77 @@
+.bg-color {
+  background-color: #28065f;
+}
+.bg-fondo {
+  background-color: #8540f5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+.imagen {
+  height: 300px;
+  border-radius: 20px;
+}
+.tarjeta {
+  max-width: 400px;
+}
+.enlace {
+  color: black;
+  text-decoration: none;
+}
+.line {
+  background-color: white;
+  height: 2px;
+  width: 100px;
+}
+.line-black {
+  background-color: black;
+  height: 2px;
+  width: 100px;
+}
+.textoSobreMi {
+  font-size: 18px;
+  padding: 20px 250px;
+}
+.formulario {
+  display: flex;
+  justify-content: center;
+}
+.margen {
+  margin-right: 500px;
+}
+.bg-footer {
+  background-color: #520dc2;
+  color: white;
+}
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.bg-derechos {
+  background-color: #140330;
+  color: white;
+}
+
+.iconos {
+  margin: 20px;
+}
+
+@media (max-width: 700px) {
+  .textoSobreMi {
+    padding: 20px 20px;
+  }
+  .margen {
+    margin-right: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .textoSobreMi {
+    padding: 10px 10px;
+  }
+  .margen {
+    margin-right: 150px;
+  }
+}

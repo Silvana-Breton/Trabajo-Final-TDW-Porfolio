@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- barra de navegación -->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-color">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#">SILVANA BRETÓN</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            MENU
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#portfolio"
+                  >PORTFOLIO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre-mi">SOBRE MÍ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section
+        class="container-fluid d-flex flex-column align-items-center mt-5 py-5 bg-fondo"
+      >
+        <img class="imagen" src="./img/mi-foto.svg" alt="mi foto" />
+        <h1 class="mt-3 mb-0 display-5 text-uppercase fw-bold">
+          Silvana Bretón
+        </h1>
+        <!-- barra con estrellita -->
+        <div class="d-flex gap-2 py-4">
+          <div class="line"></div>
+          <i class="fa-solid fa-star fa-lg"></i>
+          <div class="line"></div>
+        </div>
+        <p>
+          Estudiante de la Tecnicatura en Informática de Gestión de la UnlPam
+        </p>
+      </section>
+
+      <!-- Sección Potfolio -->
+      <section id="portfolio" class="container-fluid py-5">
+        <div class="container py-4">
+          <h2 class="display-6 fw-bold text-center pt-4 mb-0">PORTFOLIO</h2>
+          <div class="d-flex gap-2 py-4 mb-4 justify-content-center">
+            <div class="line-black"></div>
+            <i class="fa-solid fa-star fa-lg"></i>
+            <div class="line-black"></div>
+          </div>
+        </div>
+        <!-- targetas de los trabajos-->
+        <div class="container text-center">
+          <div class="row align-items-center g-4">
+            <div class="col">
+              <article class="tarjeta">
+                <img
+                  class="imagen"
+                  src="./img/lemon-pie.jpeg"
+                  alt="Lemon Pie"
+                />
+                <a
+                  href="https://github.com/Silvana-Breton/01-Lemon-Pie.git"
+                  class="enlace"
+                  ><h3>Lemon Pie</h3></a
+                >
+              </article>
+            </div>
+            <div class="col">
+              <article class="tarjeta">
+                <img class="imagen" src="./img/CVBatman.png" alt="Batman" />
+                <a
+                  href="https://github.com/Silvana-Breton/02-cv-batman.git"
+                  class="enlace"
+                  ><h3>CV Batman</h3></a
+                >
+              </article>
+            </div>
+            <div class="col">
+              <article class="tarjeta">
+                <img class="imagen" src="./img/super.png" alt="Superheroes" />
+                <a
+                  href="https://github.com/Silvana-Breton/03-supers.git"
+                  class="enlace"
+                  ><h3>Súpers</h3></a
+                >
+              </article>
+            </div>
+            <div class="col">
+              <article class="tarjeta">
+                <img class="imagen" src="./img/petshop.jpeg" alt="Pet" />
+                <a
+                  href="https://github.com/Silvana-Breton/04-Pet-Shop.git"
+                  class="enlace"
+                  ><h3>Pet Shop</h3></a
+                >
+              </article>
+            </div>
+            <div class="col">
+              <article class="tarjeta">
+                <img class="imagen" src="./img/piza.jpeg" alt="Pizza" />
+                <a
+                  href="https://github.com/Silvana-Breton/05-pizzeria.git"
+                  class="enlace"
+                  ><h3>Pizzería</h3></a
+                >
+              </article>
+            </div>
+            <div class="col">
+              <article class="tarjeta">
+                <img class="imagen" src="./img/gameshop.jpeg" alt="Game" />
+                <a
+                  href="https://github.com/Silvana-Breton/06-Game-Shop.git"
+                  class="enlace"
+                  ><h3>Game Shop</h3></a
+                >
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sobre-mi" class="container-fluid text-center py-5 bg-fondo">
+        <div class="container text-center mt-3 mb-3">
+          <h2>SOBRE MÍ</h2>
+          <div class="d-flex gap-2 py-4 mb-4 justify-content-center">
+            <div class="line"></div>
+            <i class="fa-solid fa-star fa-lg"></i>
+            <div class="line"></div>
+          </div>
+        </div>
+        <p class="textoSobreMi">
+          Mi nombre es Silvana Bretón y soy estudiante de la carrera Tecnicatura
+          en Informática de Gestión en la Facultad de Ciencias Exactas y
+          Naturales de la UnlPam. Esta página contiene mi Portfolio con todos
+          los trabajos realizados durante la materia "Taller de Diseño Web" del
+          año 2024, a cargo de los profesores Lucas Díaz y Martín Lobos.
+        </p>
+        <button type="button" class="btn btn-outline-light">
+          Descargar CV
+        </button>
+      </section>
+      <section id="contacto" class="container-fluid py-5">
+        <div class="container text-center mt-3 mb-3">
+          <h2>CONTACTAME</h2>
+          <div class="d-flex gap-2 py-4 mb-4 justify-content-center">
+            <div class="line-black"></div>
+            <i class="fa-solid fa-star fa-lg"></i>
+            <div class="line-black"></div>
+          </div>
+        </div>
+        <div class="formulario">
+          <form action="">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre Completo</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nombre"
+                placeholder=""
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder=""
+              />
+            </div>
+            <div class="mb-3">
+              <label for="telefono" class="form-label"
+                >Número de Teléfono</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="telefono"
+                placeholder=""
+              />
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" rows="3"></textarea>
+            </div>
+            <div class="margen">
+              <button type="button" class="bg-fondo">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="container-fluid py-5 bg-footer">
+        <div class="container text-center footer-top">
+          <div>
+            <h3>MI LUGAR</h3>
+            <p>
+              Dirección: Allan Kardec y Sergio López <br />
+              Ciudad: Santa Rosa <br />
+              Provincia: La Pampa - CP: 6300
+            </p>
+          </div>
+          <div>
+            <h3>SIGAMOS CONECTADOS</h3>
+            <div class="footer-redes">
+              <a href="#"
+                ><img
+                  class="iconos"
+                  src="./img/icon-facebook.svg"
+                  alt="Facebook"
+              /></a>
+              <a href="#"
+                ><img
+                  class="iconos"
+                  src="./img/icon-instagram.svg"
+                  alt="Instagram"
+              /></a>
+            </div>
+          </div>
+          <div>
+            <h3>SOBRE MÍ</h3>
+            <p>
+              Soy una persona creativa y <br />
+              con ansias de aprender. Tengo <br />
+              conocimientos de HTML, CSS y Bootstrap
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid text-center py-3 bg-derechos">
+        <p>
+          Bretón Silvana Leticia - Todos los derechos reservados © - TDW 2024.
+        </p>
+      </section>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
