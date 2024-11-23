@@ -57,6 +57,7 @@
       </nav>
     </header>
     <main>
+      <!-- sección banner presentación -->
       <section
         class="container-fluid d-flex flex-column align-items-center mt-5 py-5 bg-fondo"
       >
@@ -85,76 +86,376 @@
             <div class="line-black"></div>
           </div>
         </div>
+
         <!-- targetas de los trabajos-->
         <div class="container text-center">
-          <div class="row align-items-center g-4">
-            <div class="col">
-              <article class="tarjeta">
+          <div class="row row-gap-4">
+            <!-- tarjeta Lemon Pie -->
+            <article class="col-12 col-sm-6 col-lg-4 tarjeta">
+              <div
+                class="card position-relative"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#lemonModal"
+              >
+                <i
+                  class="fa-solid fa-circle-plus plus position-absolute fa-5x"
+                ></i>
                 <img
-                  class="imagen"
+                  class="card-img-top"
                   src="./img/lemon-pie.jpeg"
-                  alt="Lemon Pie"
+                  alt="LemonPie"
                 />
-                <a
-                  href="https://github.com/Silvana-Breton/01-Lemon-Pie.git"
-                  class="enlace"
-                  ><h3>Lemon Pie</h3></a
-                >
-              </article>
-            </div>
-            <div class="col">
-              <article class="tarjeta">
-                <img class="imagen" src="./img/CVBatman.png" alt="Batman" />
-                <a
-                  href="https://github.com/Silvana-Breton/02-cv-batman.git"
-                  class="enlace"
-                  ><h3>CV Batman</h3></a
-                >
-              </article>
-            </div>
-            <div class="col">
-              <article class="tarjeta">
-                <img class="imagen" src="./img/super.png" alt="Superheroes" />
-                <a
-                  href="https://github.com/Silvana-Breton/03-supers.git"
-                  class="enlace"
-                  ><h3>Súpers</h3></a
-                >
-              </article>
-            </div>
-            <div class="col">
-              <article class="tarjeta">
-                <img class="imagen" src="./img/petshop.jpeg" alt="Pet" />
-                <a
-                  href="https://github.com/Silvana-Breton/04-Pet-Shop.git"
-                  class="enlace"
-                  ><h3>Pet Shop</h3></a
-                >
-              </article>
-            </div>
-            <div class="col">
-              <article class="tarjeta">
-                <img class="imagen" src="./img/piza.jpeg" alt="Pizza" />
-                <a
-                  href="https://github.com/Silvana-Breton/05-pizzeria.git"
-                  class="enlace"
-                  ><h3>Pizzería</h3></a
-                >
-              </article>
-            </div>
-            <div class="col">
-              <article class="tarjeta">
-                <img class="imagen" src="./img/gameshop.jpeg" alt="Game" />
-                <a
-                  href="https://github.com/Silvana-Breton/06-Game-Shop.git"
-                  class="enlace"
-                  ><h3>Game Shop</h3></a
-                >
-              </article>
-            </div>
+                <div class="card-body">
+                  <h3 class="card-text text-center">Lemon Pie</h3>
+                </div>
+              </div>
+              <!-- Modal Lemon Pie -->
+              <div
+              class="modal fade"
+              id="lemonModal"
+              tabindex="-1"
+              aria-labelledby="lemonModalLabel"
+              aria-hidden="true"
+              >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container text-center gap-3">
+                      <h1 class="modal-title fs-5" id="lemonModalLabel">
+                        Proyecto Lemon Pie
+                      </h1>
+                      <img
+                        src="./img/lemon-pie.jpeg"
+                        class="card-img-top py-4"
+                        alt="LemonPie"
+                      />
+                      <a
+                        type="button"
+                        class="btn btn-primary text-center"
+                        href="https://github.com/Silvana-Breton/01-Lemon-Pie.git"
+                      >Visitar Sitio
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- tarjeta CV Batman -->
+            <article class="col-12 col-sm-6 col-lg-4 tarjeta">
+              <div
+                class="card position-relative"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#batmanModal"
+              >
+                <i
+                  class="fa-solid fa-circle-plus plus position-absolute fa-5x"
+                ></i>
+                <img
+                  class="card-img-top"
+                  src="./img/CVBatman.png"
+                  alt="CVBatman"
+                />
+                <div class="card-body">
+                  <h3 class="card-text text-center">CV Batman</h3>
+                </div>
+              </div>
+              <!-- Modal CV Batman -->
+              <div
+              class="modal fade"
+              id="batmanModal"
+              tabindex="-1"
+              aria-labelledby="batmanModalLabel"
+              aria-hidden="true"
+              >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container text-center gap-3">
+                      <h1 class="modal-title fs-5" id="batmanModalLabel">
+                        Proyecto CV Batman
+                      </h1>
+                      <img
+                        src="./img/CVBatman.png"
+                        class="card-img-top py-4"
+                        alt="CVBatman"
+                      />
+                      <a
+                        type="button"
+                        class="btn btn-primary text-center"
+                        href="https://github.com/Silvana-Breton/02-cv-batman.git"
+                      >Visitar Sitio
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- tarjeta Supers -->
+            <article class="col-12 col-sm-6 col-lg-4 tarjeta">
+              <div
+                class="card position-relative"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#superModal"
+              >
+                <i
+                  class="fa-solid fa-circle-plus plus position-absolute fa-5x"
+                ></i>
+                <img
+                  class="card-img-top"
+                  src="./img/super.png"
+                  alt="Supers"
+                />
+                <div class="card-body">
+                  <h3 class="card-text text-center">Súpers</h3>
+                </div>
+              </div>
+              <!-- Modal Supers -->
+              <div
+              class="modal fade"
+              id="superModal"
+              tabindex="-1"
+              aria-labelledby="superModalLabel"
+              aria-hidden="true"
+              >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container text-center gap-3">
+                      <h1 class="modal-title fs-5" id="superModalLabel">
+                        Proyecto Super Héroes
+                      </h1>
+                      <img
+                        src="./img/super.png"
+                        class="card-img-top py-4"
+                        alt="Supers"
+                      />
+                      <a
+                        type="button"
+                        class="btn btn-primary text-center"
+                        href="https://github.com/Silvana-Breton/03-supers.git"
+                      >Visitar Sitio
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- tarjeta Pet Shop -->
+            <article class="col-12 col-sm-6 col-lg-4 tarjeta">
+              <div
+                class="card position-relative"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#petModal"
+              >
+                <i
+                  class="fa-solid fa-circle-plus plus position-absolute fa-5x"
+                ></i>
+                <img
+                  class="card-img-top"
+                  src="./img/petshop.jpeg"
+                  alt="PetShop"
+                />
+                <div class="card-body">
+                  <h3 class="card-text text-center">Pet Shop</h3>
+                </div>
+              </div>
+              <!-- Modal Pet Shop -->
+              <div
+              class="modal fade"
+              id="petModal"
+              tabindex="-1"
+              aria-labelledby="petModalLabel"
+              aria-hidden="true"
+              >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container text-center gap-3">
+                      <h1 class="modal-title fs-5" id="petModalLabel">
+                        Proyecto Pet Shop
+                      </h1>
+                      <img
+                        src="./img/petshop.jpeg"
+                        class="card-img-top py-4"
+                        alt="PetShop"
+                      />
+                      <a
+                        type="button"
+                        class="btn btn-primary text-center"
+                        href="https://github.com/Silvana-Breton/04-Pet-Shop.git"
+                      >Visitar Sitio
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- tarjeta Pizzeria -->
+            <article class="col-12 col-sm-6 col-lg-4 tarjeta">
+              <div class="card position-relative" type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#pizzaModal">
+                <i
+                  class="fa-solid fa-circle-plus plus position-absolute fa-5x"
+                ></i>
+                <img
+                  class="card-img-top"
+                  src="./img/piza.jpeg"
+                  alt="Pizza"
+                />
+                <div class="card-body">
+                  <h3 class="card-text text-center">Pizzería</h3>
+                </div>
+              </div>
+              <!-- Modal Pizzeria -->
+              <div
+              class="modal fade"
+              id="pizzaModal"
+              tabindex="-1"
+              aria-labelledby="gameModalLabel"
+              aria-hidden="true"
+              >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container text-center gap-3">
+                      <h1 class="modal-title fs-5" id="pizzaModalLabel">
+                        Proyecto Pizzería
+                      </h1>
+                      <img
+                        src="./img/piza.jpeg"
+                        class="card-img-top py-4"
+                        alt="Pizza"
+                      />
+                      <a
+                        type="button"
+                        class="btn btn-primary text-center"
+                        href="https://github.com/Silvana-Breton/05-pizzeria.git"
+                      >Visitar Sitio
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- tarjeta GameShop -->
+            <article class="col-12 col-sm-6 col-lg-4 tarjeta">
+              <div
+                class="card position-relative"
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#gameModal"
+              >
+                <i
+                  class="fa-solid fa-circle-plus plus position-absolute fa-5x"
+                ></i>
+                <img
+                  class="card-img-top"
+                  src="./img/gameshop.jpeg"
+                  alt="GameShop"
+                />
+                <div class="card-body">
+                  <h3 class="card-text text-center">Game Shop</h3>
+                </div>
+              </div>
+              <!-- Modal GameShop -->
+              <div
+              class="modal fade"
+              id="gameModal"
+              tabindex="-1"
+              aria-labelledby="gameModalLabel"
+              aria-hidden="true"
+              >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container text-center gap-3">
+                      <h1 class="modal-title fs-5" id="gameModalLabel">
+                        Proyecto GameShop
+                      </h1>
+                      <img
+                        src="./img/gameshop.jpeg"
+                        class="card-img-top py-4"
+                        alt="GameShop"
+                      />
+                      <a
+                        type="button"
+                        class="btn btn-primary text-center"
+                        href="https://github.com/Silvana-Breton/06-Game-Shop.git"
+                      >Visitar Sitio
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>
+
+      <!-- sección sobre mí -->
       <section id="sobre-mi" class="container-fluid text-center py-5 bg-fondo">
         <div class="container text-center mt-3 mb-3">
           <h2>SOBRE MÍ</h2>
@@ -175,6 +476,8 @@
           Descargar CV
         </button>
       </section>
+
+      <!-- sección contactame -->
       <section id="contacto" class="container-fluid py-5">
         <div class="container text-center mt-3 mb-3">
           <h2>CONTACTAME</h2>
